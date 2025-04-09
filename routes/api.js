@@ -148,7 +148,7 @@ module.exports = function (app) {
 
       // Validate _id format
       if (!ObjectId.isValid(_id)) {
-        return res.json({ error: "Could not delete", _id });
+        return res.json({ error: "could not delete", _id });
       }
 
       // Delete the issue
